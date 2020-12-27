@@ -1,0 +1,28 @@
+{>"layouts/master" /}
+
+{<title}
+    About TekBooks
+{/title}
+
+{<body}
+    <div class="row">
+        <div class="large-12 columns cell">
+            <h2>About Us</h2>
+            <p>
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+            </p>
+            <p>
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+                aaoio anong oiangoia nsiogna oingoain oiangoian goinagn aoi gnio
+            </p>
+        </div>
+    </div>
+{/body}
