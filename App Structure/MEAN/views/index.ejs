@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="TestApp">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/assets/css/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+  </head>
+  <body ng-controller="MainController as vm">
+    <main>
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+        <i>{{ vm.message }}</i>
+        <br/>
+        <input type="text" ng-model="vm.message"/>
+        <br />
+        <ul>
+          <li ng-repeat="person in vm.people">
+            {{ person.name }}
+          </li>
+        </ul>
+    </main>    
+
+    <script>
+      var clientPeople = <%- JSON.stringify(serverPeople) %>;
+    </script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
