@@ -1,0 +1,66 @@
+Project uses:
+Passport with local db or facebook + google
+NodeJS
+MongoDB
+
+Login/Logout
+Register
+Encryption
+
+// Actions to install MongoDB
+0. Open cmd as administrator
+1. Download into C:/
+2. create several folders at bin level:
+    data > db
+    log
+3. To create a data base path to the db + a log path + how logs will 
+    act + using the rest interface
+    Do the following command: 
+    mongodb --directoryperdb --dbpath folder --logpath directory+filename 
+        --logappend --rest --install
+4. Starting MongoDB
+    net start MongoDB
+5. Mongo Shell
+    mongo
+6. Show current database
+    db
+7. Create database
+    use name
+8. Show databases
+    show dbs
+9. Create collection
+    db.createCollection('name'); 
+    and showing collection: show collections
+10. Insert into collection
+    db.collectionName.insert({ object });
+11. Find things in collection
+    db.collectionName.find()
+    can add .pretty() to make results easier to see
+12. Update collection item
+    db.collectionName.update({ find by property and key }, {$set:{prop:key}})
+13. Delete collection item
+    db.collectionName.remove({prop:key})
+
+npm install --save adds to package.json file
+    "mongoose": "*", // orm
+    "connect-flash": "*", // add messages
+    "express-messages": "*",
+    "express-validator": "*", // form validation
+    "passport": "*", // login and registration
+    "passport-local": "*", // local auth
+    "passport-http": "*",
+    "multer": "*" // upload images
+
+Mongoose:
+    Need to create a schema
+    Model
+    Save to db
+
+Bcrypt.js:
+    Generate a salt and hash with the desired field to hash
+    Save to db
+
+Passport: // authentication module for nodejs
+    Login functionality
+    Highly customizable
+    Local strategy vs. oauth
